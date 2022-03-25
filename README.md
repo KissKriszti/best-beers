@@ -7,3 +7,7 @@ You can use this repository as a template for your repository or copy the files 
 3. If you don't need it stop it with `Control + C` keycommand.
 
 You can write your frontend code (`HTML, CSS, JS`) into the `frontend` directory.
+
+feladat: data.jsonból fetch-csel beolvasni a json adatokat és ki kell listázni. js a frontend oldalon is. for vagy map
+
+szerda éjfélre megszépíteni az oldalt -- házi verseny

@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  background: transparent;
+  font-family: inherit;
+}
+a {
+  text-decoration: none;
+}
+a img {
+  border: none;
+}
+
+button,
+a {
+  cursor: pointer;
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+button,
+textarea,
+select {
+  appearance: none !important;
+  border-radius: 0;
+}
+
+/* CSS Reset Ends */
+
+body {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  background-color: #00DFE3;
+}
+
+#root {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+#root h1 {
+  position: relative;
+  padding: 40px 0;
+  text-align: center;
+}
+
+#root .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  padding: 50px 50px;
+  row-gap: 50px;
+}
+
+#root .container .card {
+  height: 200px;
+  width: 200px;
+  text-align: center;
+  padding: 30px 5px;
+  line-height: 35px;
+  font-size: 15px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
