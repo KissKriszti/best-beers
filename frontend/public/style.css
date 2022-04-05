@@ -33,38 +33,131 @@ select {
 
 /* CSS Reset Ends */
 
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rubik:wght@400;500&display=swap');
+
 body {
   height: 100vh;
   width: 100%;
   margin: 0;
-  background-color: #00DFE3;
+  background-color: #F5F3E7;
 }
 
 #root {
-    max-width: 1400px;
-    margin: 0 auto;
+  position: relative;
+  max-width: 1440px;
+  padding: 15px;
+  /* border: 1px solid black; */
+  margin: 0 auto;
+}
+
+#root nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
+  background-color: #F5F3E7;
+  z-index: 2;
+}
+
+#root nav i {
+  margin-right: 20px;
+}
+
+#root nav h3 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 25px;
+  margin-right: 20px;
+  color: #CC0B2D;
+}
+
+#root nav button {
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  font-family: 'Rubik', sans-serif;
+  background-color: #CC0B2D;
+  color: white;
+}
+
+#root .foam {
+  width: 100%;
 }
 
 #root h1 {
-  position: relative;
-  padding: 40px 0;
+  position: absolute;
+  padding: 0 300px;
+  margin-top: 20px;
   text-align: center;
+  font-size: 80px;
+  font-family: 'Permanent Marker', cursive;
+  opacity: 0.8;
+  z-index: -1;
 }
 
 #root .container {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
-  padding: 50px 50px;
-  row-gap: 50px;
+  margin-top: 70px;
 }
 
 #root .container .card {
-  height: 200px;
-  width: 200px;
-  text-align: center;
-  padding: 30px 5px;
-  line-height: 35px;
-  font-size: 15px;
-  background-color: rgba(255, 255, 255, 0.7);
+  margin: 100px 110px 50px 110px;
+  line-height: 30px;
+  font-family: 'Rubik', sans-serif;
+}
+
+#root .container .card img {
+  padding-left: 10px;
+  transform: rotate(12deg);
+}
+
+#root .container .card:hover img {
+  transform: rotate(0deg);
+  padding-left: 0;
+}
+
+#root .container .card button {
+  width: 70px;
+  height: 35px;
+  border-radius: 5px;
+  margin-top: 10px;
+  color: white;
+  background-color: black;
+  font-size: 20px;
+  font-family: 'Rubik', sans-serif;
+}
+
+#root .container .card button:hover {
+  background-color: #CC0B2D;
+}
+
+#root .beer-mug {
+  position: absolute;
+  width: 511px;
+  height: 368px;
+  bottom: 188px;
+  right: 0;
+}
+
+#root .footer {
+  width: 100%;
+  height: 50px;
+  padding: 18px 0;
+  background-color: black;
+  color: white;
+}
+
+#root .footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+}
+
+#root .footer div i {
+  cursor: pointer;
 }
