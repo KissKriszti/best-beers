@@ -39,14 +39,12 @@ body {
   height: 100vh;
   width: 100%;
   margin: 0;
-  background-color: #F5F3E7;
+  background-color: #E78819;
 }
 
 #root {
   position: relative;
   max-width: 1440px;
-  padding: 15px;
-  /* border: 1px solid black; */
   margin: 0 auto;
 }
 
@@ -58,8 +56,9 @@ body {
   align-items: center;
   padding-bottom: 10px;
   border-bottom: 2px solid black;
-  background-color: #F5F3E7;
-  z-index: 2;
+  background-color: #E78819;
+  z-index: 3;
+  padding: 15px;
 }
 
 #root nav i {
@@ -70,7 +69,6 @@ body {
   font-family: 'Rubik', sans-serif;
   font-size: 25px;
   margin-right: 20px;
-  color: #CC0B2D;
 }
 
 #root nav button {
@@ -78,8 +76,14 @@ body {
   height: 30px;
   border-radius: 5px;
   font-family: 'Rubik', sans-serif;
-  background-color: #CC0B2D;
+  background-color: rgb(231, 33, 25);
   color: white;
+  border: 1px solid white;
+}
+
+#root nav button:hover {
+  background-color: black;
+  border: 0;
 }
 
 #root .foam {
@@ -88,12 +92,13 @@ body {
 
 #root h1 {
   position: absolute;
+  top: 454px;
   padding: 0 300px;
-  margin-top: 20px;
   text-align: center;
   font-size: 80px;
   font-family: 'Permanent Marker', cursive;
   opacity: 0.8;
+  text-shadow: 6px 6px 10px rgba(0,0,0,0.5);
   z-index: -1;
 }
 
@@ -101,23 +106,33 @@ body {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 70px;
+  margin-top: 200px;
 }
 
 #root .container .card {
+  padding: 10px 0;
   margin: 100px 110px 50px 110px;
   line-height: 30px;
   font-family: 'Rubik', sans-serif;
+  text-align: center;
 }
 
 #root .container .card img {
-  padding-left: 10px;
-  transform: rotate(12deg);
+  transform: rotate(0deg);
+  padding-left: 0;
+  transition: 0.25s ease-out;
+}
+
+#root .container .card:hover {
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.8);
+  border-radius: 10px;
+  background-color: #e7810d
 }
 
 #root .container .card:hover img {
-  transform: rotate(0deg);
-  padding-left: 0;
+  padding-left: 10px;
+  transform: rotate(12deg);
+  transition: 0.25s ease-in;
 }
 
 #root .container .card button {
@@ -133,6 +148,7 @@ body {
 
 #root .container .card button:hover {
   background-color: #CC0B2D;
+  border: 1px solid white;
 }
 
 #root .beer-mug {

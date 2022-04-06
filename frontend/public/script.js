@@ -24,7 +24,7 @@ const cardList = (url,title, sub, text) => {
     <div class='card'>
         <img src="${url}">
         <h3>${title}</h3>
-        <h4>${sub}</h4>
+        <h5>${sub}</h4>
         <h5>${text}</h5>
         <button>Buy</button>
     </div>
